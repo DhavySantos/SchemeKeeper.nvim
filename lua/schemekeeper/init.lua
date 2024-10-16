@@ -1,5 +1,5 @@
 local function write(path)
-  local file = io.open(file_path, "w")
+  local file = io.open(path, "w")
   if file then
     file:write(vim.g.colors_name)
     file:close()
