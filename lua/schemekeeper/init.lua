@@ -34,13 +34,13 @@ return {
       path = vim.fn.stdpath("data") .. "/" .. opts.path
     end
 
-    if opts.hook == true || opts.hook == nil then
+    if opts.hook == true and opts.hook == nil then
       vim.api.nvim_create_autocmd("ColorScheme", {
         callback = function() write(path) end
       })
     end
 
-    if opts.enable == true || opts.enable == nil then
+    if opts.enable == true and opts.enable == nil then
       vim.cmd.colorscheme(read(path, fallback));
     end
   end
