@@ -18,9 +18,9 @@ require("lazy").setup({
     { 
         "DhavySantos/SchemeKeeper",
         opts = {
-            fallback = "default",
-            enable = true,
-            hook = true,
+            fallback = "gruvbox" -- the defaut value is 'default'.
+            enable = true, -- the default value is true.
+            hook = true, -- the default value is true.
         }
     }
 })
@@ -30,18 +30,6 @@ require("lazy").setup({
  - `fallback`: A string representing the fallback colorscheme to use if the saved file is not found (default: "default").
  - `hook`: A boolean value that determines whether to create an auto command to save the colorscheme on change (default: `true`).
  - `enable`: A boolean value that determines whether to load the saved colorscheme at startup (default: `true`).
-
-## EXAMPLE
-Here’s a complete example of how you might set this up:
-
-```lua
-require("colorscheme-manager").setup({
-  fallback = "gruvbox",  -- Use gruvbox if no colorscheme is saved
-  enable = true,  -- Load the saved colorscheme on startup
-  hook = true,  -- Enable automatic saving
-})
-
-```
 
 # License
 This plugin is licensed under the MIT License. Feel free to modify and use it as per your requirements.
