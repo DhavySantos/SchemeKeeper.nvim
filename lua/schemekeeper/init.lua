@@ -24,7 +24,7 @@ end
 return {
   setup = function(opts)
     local fallback = "default"
-    local path = vim.fn.stdpath("data") .. "/colorscheme"
+    local path = vim.fn.stdpath("data") .. "/SchemeKeeper"
 
     if opts.fallback ~= nil then
       fallback = opts.fallback
